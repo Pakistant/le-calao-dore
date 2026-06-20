@@ -1,0 +1,74 @@
+.hero {
+  position: relative;
+  height: 100vh;          /* plein écran */
+  background-size: cover;  /* l'image s'adapte à la taille de l'écran */
+  background-position: center;
+  background-repeat: no-repeat; /* répète l'image horizontalement */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay sombre semi-transparent */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Contenu par-dessus l'overlay */
+.content {
+  position: relative;   /* passe au-dessus de l'overlay */
+  z-index: 1;
+  text-align: center;
+  color: #FAF3E0;       /* crème */
+  padding: 1rem;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #E9B824;       /* or */
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* Bouton CTA */
+.btn-cta {
+  background-color: #C84B31;   /* terracotta */
+  color: #FAF3E0;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #E9B824;   /* or au survol */
+  color: #2D4A3E;
+}
+
+/* ---- MOBILE ---- */
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .btn-cta {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}

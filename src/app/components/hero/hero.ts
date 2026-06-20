@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
-export class Hero {}
+export class Hero {
+   backgroundImage ='/assets/images/res.jpg';
+  title = 'Saveurs authentiques du Cameroun';
+  subtitle = '15 ans de tradition culinaire à Douala';
+}

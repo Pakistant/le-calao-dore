@@ -1,1 +1,14 @@
-<p>hero works!</p>
+<section class="hero"
+  [style.background-image]="'url(' + backgroundImage + ')'">
+
+  <!-- Overlay sombre pour lisibilité du texte -->
+  <div class="overlay"></div>
+
+  <!-- Contenu centré -->
+  <div class="content">
+    <h1>{{ title }}</h1>
+    <p>{{ subtitle }}</p>
+    <a href="#menu" class="btn-cta">Voir le menu ↓</a>
+  </div>
+
+</section>
