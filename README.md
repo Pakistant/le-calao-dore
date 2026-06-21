@@ -1,4 +1,4 @@
-# 🦅 Le Calao Doré — Restaurant Camerounais
+#  Le Calao Doré — Restaurant Camerounais
 
 > Site vitrine d'un restaurant traditionnel camerounais à Douala.  
 > Projet réalisé dans le cadre d'**Angular Talent Lab 2026**.
@@ -18,7 +18,7 @@
 ## 🛠️ Technologies utilisées
 
 - Angular 22
-- Bootstrap 5.3
+- Bootstrap 5.3.8
 - Bootstrap Icons
 - TypeScript 5.9+
 
@@ -39,7 +39,7 @@
 ## 🚀 Lancer le projet
 
 ```bash
-git clone https://github.com/TON_USERNAME/le-calao-dore.git
+git clone https://github.com/Pakistant/le-calao-dore.git
 cd le-calao-dore
 npm install
 ng serve --port 8080 --open
@@ -51,4 +51,4 @@ Ouvrir [http://localhost:8080](http://localhost:8080)
 
 ## 👤 Auteur
 
-**TON NOM** — Apprenant Angular Talent Lab 2026 — Cohorte Douala
+**STEVE DOUANLA** — Apprenant Angular Talent Lab 2026 — Cohorte Douala
