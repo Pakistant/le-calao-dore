@@ -5,9 +5,9 @@
       <!-- Colonne 1 : Coordonnées -->
       <div class="col-12 col-md-4 mb-4">
         <h5>Le Calao Doré</h5>
-        <p>📍 Rue Soudanaise, Akwa — Douala</p>
-        <p>📞 +237 6XX XX XX XX</p>
-        <p>✉️ contact@calao-dore.cm</p>
+        <p class="bi bi-geo-alt-fill">  Rue Soudanaise, Akwa — Douala</p>
+        <p class="bi bi-telephone">  +237 6XX XX XX XX</p>
+        <p class="bi bi-envelope">   contact@calao-dore.cm</p>
       </div>
 
       <!-- Colonne 2 : Réseaux sociaux -->
@@ -15,7 +15,7 @@
         <h5>Suivez-nous</h5>
         @for (r of reseaux; track r.nom) {
           <a [href]="r.url" class="reseau-link">
-            {{ r.icone }} {{ r.nom }}
+           <i [class]="r.icone"></i> {{ r.nom }}
           </a>
         }
       </div>

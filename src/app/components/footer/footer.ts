@@ -12,8 +12,8 @@ export class Footer {
   liens = ['Menu', 'Horaires', 'Contact'];
 
   reseaux = [
-    { nom: 'Facebook',  icone: '📘', url: '#' },
-    { nom: 'Instagram', icone: '📸', url: '#' },
-    { nom: 'WhatsApp',  icone: '💬', url: '#' },
+    { nom: 'Facebook',  icone: 'bi bi-facebook', url: '#' },
+    { nom: 'Instagram', icone: 'bi bi-instagram', url: '#' },
+    { nom: 'WhatsApp',  icone: 'bi bi-whatsapp', url: '#' },
   ];
 }
