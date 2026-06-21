@@ -1,0 +1,41 @@
+.horaires-section {
+  background-color: #2D4A3E;  /* vert foncé */
+}
+
+.horaires-section h2 {
+  color: #E9B824;             /* or */
+  font-weight: bold;
+}
+
+/* Liste */
+.list-group-item {
+  background-color: #FAF3E0;  /* crème */
+  border: none;
+  margin-bottom: 0.5rem;
+  border-radius: 8px !important;
+  padding: 1rem 1.5rem;
+  color: #2D4A3E;
+}
+
+/* Jour actuel mis en évidence */
+.current-day {
+  background-color: #E9B824 !important;  /* or */
+  color: #2D4A3E !important;
+  font-weight: bold;
+  border-left: 5px solid #C84B31 !important;  /* terracotta */
+}
+
+/* Badge */
+.badge {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .list-group-item {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.5rem;
+  }
+}
