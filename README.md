@@ -1,59 +1,54 @@
-# CalaoDore
+# 🦅 Le Calao Doré — Restaurant Camerounais
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.15.
+> Site vitrine d'un restaurant traditionnel camerounais à Douala.  
+> Projet réalisé dans le cadre d'**Angular Talent Lab 2026**.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📸 Captures d'écran
 
-```bash
-ng serve
-```
+### Desktop
+![Desktop](./screenshots/desktop.png)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Mobile
+![Mobile](./screenshots/mobile.png)
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠️ Technologies utilisées
 
-```bash
-ng generate component component-name
-```
+- Angular 22
+- Bootstrap 5.3
+- Bootstrap Icons
+- TypeScript 5.9+
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## ✅ Fonctionnalités
 
-## Building
+- ✅ Layout responsive (Desktop / Tablette / Mobile)
+- ✅ Menu burger mobile
+- ✅ Carte des plats avec badges dynamiques
+- ✅ Témoignages avec étoiles dynamiques
+- ✅ Horaires avec badge jour actuel
+- ✅ Footer 3 colonnes avec icônes
+- ✅ Palette de couleurs camerounaise
 
-To build the project run:
+---
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 🚀 Lancer le projet
 
 ```bash
-ng test
+git clone https://github.com/TON_USERNAME/le-calao-dore.git
+cd le-calao-dore
+npm install
+ng serve --port 8080 --open
 ```
 
-## Running end-to-end tests
+Ouvrir [http://localhost:8080](http://localhost:8080)
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 👤 Auteur
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**TON NOM** — Apprenant Angular Talent Lab 2026 — Cohorte Douala
