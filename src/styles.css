@@ -1,1 +1,122 @@
-/* You can add global styles to this file, and also import other style files */
+/* ============================================
+   VARIABLES GLOBALES — Palette Le Calao Doré
+   ============================================ */
+:root {
+  --vert-foret  : #2D4A3E;
+  --terracotta  : #C84B31;
+  --or          : #E9B824;
+  --creme       : #FAF3E0;
+}
+
+/* ============================================
+   RESET DE BASE
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--creme);
+  color: var(--vert-foret);
+}
+
+/* ============================================
+   TYPOGRAPHIE GLOBALE
+   ============================================ */
+h1, h2, h3, h4, h5 {
+  font-family: 'Georgia', serif;
+  color: var(--vert-foret);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/* ============================================
+   BOUTONS GLOBAUX
+   ============================================ */
+.btn-primary-custom {
+  background-color: var(--terracotta);
+  color: var(--creme);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--or);
+  color: var(--vert-foret);
+}
+
+/* ============================================
+   SECTIONS ALTERNÉES
+   ============================================ */
+
+/* Sections fond crème */
+.section-creme {
+  background-color: var(--creme);
+  padding: 4rem 0;
+}
+
+/* Sections fond vert */
+.section-vert {
+  background-color: var(--vert-foret);
+  padding: 4rem 0;
+  color: var(--creme);
+}
+
+/* Titres sur fond vert */
+.section-vert h2 {
+  color: var(--or);
+}
+
+/* ============================================
+   UTILITAIRES
+   ============================================ */
+.text-or       { color: var(--or); }
+.text-terracotta { color: var(--terracotta); }
+.text-vert     { color: var(--vert-foret); }
+.text-creme    { color: var(--creme); }
+
+.bg-or         { background-color: var(--or); }
+.bg-terracotta { background-color: var(--terracotta); }
+.bg-vert       { background-color: var(--vert-foret); }
+.bg-creme      { background-color: var(--creme); }
+
+/* ============================================
+   SCROLLBAR PERSONNALISÉE
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--creme);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vert-foret);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--or);
+}/* You can add global styles to this file, and also import other style files */
