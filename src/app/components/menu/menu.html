@@ -7,6 +7,13 @@
       @for (dish of dishes; track dish.id) {
         <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card h-100">
+            <div class="card h-100">
+
+            <!-- Image du plat -->
+            <img 
+              [src]="dish.image" 
+              [alt]="dish.name"
+              class="card-img-top dish-img">
             <div class="card-body">
 
               <!-- Badge coloré selon catégorie -->
@@ -29,6 +36,7 @@
 
             </div>
           </div>
+        </div>
         </div>
       }
     </div>

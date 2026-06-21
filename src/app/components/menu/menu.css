@@ -33,3 +33,21 @@
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
 }
+
+/* Image du plat */
+.dish-img {
+  width: 100%;
+  height: 200px;        /* hauteur fixe pour toutes les images */
+  object-fit: cover;    /* recadre sans déformer */
+  border-radius: 10px 10px 0 0;  /* arrondi en haut seulement */
+}
+
+/* Effet zoom au survol */
+.card:hover .dish-img {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.card {
+  overflow: hidden;     /* cache le débordement du zoom */
+}
