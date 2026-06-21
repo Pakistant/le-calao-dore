@@ -1,0 +1,75 @@
+.footer {
+  background-color: #2D4A3E;  /* vert foncé */
+  color: #FAF3E0;             /* crème */
+}
+
+/* Titres colonnes */
+.footer h5 {
+  color: #E9B824;             /* or */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Texte coordonnées */
+.footer p {
+  color: #FAF3E0;             /* crème */
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Liens réseaux sociaux */
+.reseau-link {
+  display: block;
+  color: #FAF3E0;             /* crème */
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.reseau-link:hover {
+  color: #E9B824;             /* or au survol */
+}
+
+/* Liens navigation */
+.footer ul li a {
+  color: #FAF3E0;             /* crème */
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer ul li a:hover {
+  color: #E9B824;             /* or au survol */
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Séparateur */
+.separateur {
+  border-color: #E9B824;      /* or */
+  opacity: 0.3;
+  margin: 1.5rem 0;
+}
+
+/* Copyright */
+.copyright {
+  color: #FAF3E0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Mobile : colonnes empilées automatiquement via Bootstrap */
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+
+  .reseau-link {
+    display: inline-block;
+    margin: 0.3rem 0.5rem;
+  }
+}

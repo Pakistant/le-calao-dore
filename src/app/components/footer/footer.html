@@ -1,1 +1,48 @@
-<p>footer works!</p>
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Colonne 1 : Coordonnées -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5>Le Calao Doré</h5>
+        <p>📍 Rue Soudanaise, Akwa — Douala</p>
+        <p>📞 +237 6XX XX XX XX</p>
+        <p>✉️ contact@calao-dore.cm</p>
+      </div>
+
+      <!-- Colonne 2 : Réseaux sociaux -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5>Suivez-nous</h5>
+        @for (r of reseaux; track r.nom) {
+          <a [href]="r.url" class="reseau-link">
+            {{ r.icone }} {{ r.nom }}
+          </a>
+        }
+      </div>
+
+      <!-- Colonne 3 : Liens rapides -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5>Navigation</h5>
+        <ul class="list-unstyled">
+          @for (lien of liens; track lien) {
+            <li>
+              <a [href]="'#' + lien.toLowerCase()">
+                {{ lien }}
+              </a>
+            </li>
+          }
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Séparateur -->
+    <hr class="separateur">
+
+    <!-- Copyright dynamique -->
+    <p class="text-center copyright mb-0">
+      © {{ annee }} Le Calao Doré — Tous droits réservés
+    </p>
+
+  </div>
+</footer>

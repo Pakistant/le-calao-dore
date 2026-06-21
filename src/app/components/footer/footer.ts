@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './footer.html',
   styleUrl: './footer.css',
 })
-export class Footer {}
+export class Footer {
+  annee = new Date().getFullYear();
+
+  liens = ['Menu', 'Horaires', 'Contact'];
+
+  reseaux = [
+    { nom: 'Facebook',  icone: '📘', url: '#' },
+    { nom: 'Instagram', icone: '📸', url: '#' },
+    { nom: 'WhatsApp',  icone: '💬', url: '#' },
+  ];
+}
