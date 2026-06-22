@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-header',
   imports: [],
@@ -7,16 +9,27 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
 })
 export class Header {
-  isMenuOpen = false;
+//  isMenuOpen = false;
+ // activeLink = 'Accueil';
+ // links = ['Accueil', 'Menu', 'Témoignages', 'Horaires', 'Contact'];
+
+  links = [
+  { label: 'Accueil',      href: '#accueil' },
+  { label: 'Menu',         href: '#menu' },
+  { label: 'Témoignages',  href: '#temoignages' },
+  { label: 'Horaires',     href: '#horaires' },
+  { label: 'Contact',      href: '#contact' },
+];
+
   activeLink = 'Accueil';
-  links = ['Accueil', 'Menu', 'Témoignages', 'Horaires', 'Contact'];
+isMenuOpen = false;
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
+toggleMenu() {
+  this.isMenuOpen = !this.isMenuOpen;
+}
 
-  setActive(link: string) {
-    this.activeLink = link;
-    this.isMenuOpen = false;
-  }
+setActive(label: string) {
+  this.activeLink = label;
+  this.isMenuOpen = false;
+}
 }

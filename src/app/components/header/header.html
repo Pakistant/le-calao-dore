@@ -1,31 +1,31 @@
 <header class="header">
 
-  <!-- Logo -->
   <div class="logo">Le Calao Doré</div>
 
-  <!-- Bouton burger (visible seulement sur mobile via CSS) -->
   <button class="burger" (click)="toggleMenu()">☰</button>
 
-  <!-- Navbar -->
+  <!-- Navbar desktop -->
+  <nav class="nav-desktop">
+    @for (link of links; track link.label) {
+      <a [href]="link.href"
+         [class.active]="activeLink === link.label"
+         (click)="setActive(link.label)">
+        {{ link.label }}
+      </a>
+    }
+  </nav>
+
+  <!-- Navbar mobile -->
   @if (isMenuOpen) {
     <nav class="nav-mobile">
-      @for (link of links; track link) {
-        <a [class.active]="activeLink === link"
-           (click)="setActive(link)">
-          {{ link }}
+      @for (link of links; track link.label) {
+        <a [href]="link.href"
+           [class.active]="activeLink === link.label"
+           (click)="setActive(link.label)">
+          {{ link.label }}
         </a>
       }
     </nav>
   }
-
-  <!-- Navbar desktop (toujours visible) -->
-  <nav class="nav-desktop">
-    @for (link of links; track link) {
-      <a [class.active]="activeLink === link"
-         (click)="setActive(link)">
-        {{ link }}
-      </a>
-    }
-  </nav>
 
 </header>
